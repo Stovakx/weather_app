@@ -59,3 +59,16 @@
 .card .bottom div p:nth-child(1){
     font-weight: 700;
 }
+
+@media only screen and (max-device-width:500px) {
+    .card .bottom{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card .bottom div{
+        margin: 10px;
+    }
+}
