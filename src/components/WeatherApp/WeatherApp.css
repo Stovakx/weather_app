@@ -13,8 +13,21 @@
 .card .searchDiv{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     padding: 1rem;
+}
+
+.card .searchDiv button{
+    margin: 10px auto;
+    width: 256px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+
 }
 
 .searchDiv input{
@@ -34,16 +47,19 @@
 .card .header{
     width: 100%;
     margin: 1rem auto;
+    display: grid;
 }
 
 .card .description{
-    position: relative;
-    right: -90%;
-    transform-origin: 0 0;
-    transform: rotate(270deg);
+    justify-self: end;
+
+
 
 }
-
+.card .description img{
+    width: 50px;
+    height: 50px;
+}
 
 .card .bottom{
     display: flex;
@@ -70,5 +86,11 @@
 
     .card .bottom div{
         margin: 10px;
+    }
+
+    .card .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
