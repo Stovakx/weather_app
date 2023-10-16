@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './WeatherApp.css';
 
@@ -34,8 +34,11 @@ export default function WeatherApp() {
   };
 
   useEffect(() => {
-    searchLocation();
+    if (location && location.trim() !== '' && location.endsWith('\n')) {
+      searchLocation();
+    }
   }, [location]);
+
 
   return (
     <div className="card">
