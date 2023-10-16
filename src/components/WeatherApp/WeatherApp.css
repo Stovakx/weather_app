@@ -76,6 +76,11 @@
     font-weight: 700;
 }
 
+.error-message{
+    font-size: 16px;
+    color: red;
+}
+
 @media only screen and (max-device-width:500px) {
     .card .bottom{
         display: flex;
